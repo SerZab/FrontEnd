@@ -1,0 +1,12 @@
+table, tr, td {
+    border: 1px solid black;
+    margin: 2px;
+}
+img {
+    height: 25px;
+    padding: 1px;
+}
+.table_title {
+    font-weight: 900;
+    text-align: center;
+}
