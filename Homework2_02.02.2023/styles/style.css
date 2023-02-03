@@ -1,12 +1,13 @@
 table, tr, td {
     border: 1px solid black;
     margin: 2px;
+    padding: 1px;
+}
+table thead {
+    font-weight: 900;
+    text-align: center;
 }
 img {
     height: 25px;
-    padding: 1px;
-}
-.table_title {
-    font-weight: 900;
-    text-align: center;
+    margin: 1px;  
 }
