@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    padding-bottom: 50px;
+}
+.main {
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgb(235, 225, 225);
+    position: relative;
+    margin: 50px;
+}
+.inner {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+.inner:nth-child(1) {
+    border: 1px solid red;
+    background-color: red;
+    left: 5px;
+    top: 5px;
+    z-index: 1;
+}
+.inner:nth-child(2) {
+    border: 1px solid green;
+    background-color: green;
+    right: 50%;
+    top: 50%;
+    z-index: 3;
+    transform: translate(50%, -50%);
+    transition-duration: 5s;
+
+}
+.inner:nth-child(3) {
+    border: 1px solid blue;
+    background-color: blue;
+    right: 5px;
+    bottom: 10px;
+    z-index: 2;
+}
+.inner:nth-child(2):hover {
+    transform: rotate(45deg) scale(1.5);
+}
