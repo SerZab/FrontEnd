@@ -41,9 +41,17 @@ input {
 input:nth-child(1) {
     border: 1px solid #FFE44D;
 }
+input:nth-child(1):hover {
+    border: 1px solid #CFD8DC;
+    transform: scale(1.02);
+}
 input:nth-child(2) {
     border: 1px solid #CFD8DC;
-}    
+}
+input:nth-child(2):hover {
+    border: 1px solid #FFE44D;
+    transform: scale(1.02);
+}
 .main {
     background: #F5F5F5;    
     width: auto;
@@ -75,10 +83,17 @@ button {
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
+    cursor: pointer;
+}
+button:hover {
+    background: #cfd8dcd6;
 }
 .button-registration {
     border: 1px solid #FFE44D;
     background: #FFE44D;
+}
+.button-registration:hover {
+    background: #c7ae21d6;
 }
 .exit-button {
     width: 14px;
