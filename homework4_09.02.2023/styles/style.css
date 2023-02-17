@@ -43,5 +43,5 @@ body {
     z-index: 2;
 }
 .inner:nth-child(2):hover {
-    transform: rotate(45deg) scale(1.5);
+    transform: rotate(-45deg) scale(1.5);
 }
