@@ -64,12 +64,12 @@ function sumEvOddNum(n, m) {
   let sumOdd = 0;
   let sum = 0;
 
-  for (let i = n; i <= m; i++) {
-    sum +=i
-    if (i % 2 === 0) {
-      sumEven += i;
+  for (let index = n; index <= m; index++) {
+    sum +=index
+    if (index % 2 === 0) {
+      sumEven += index;
     } else {
-      sumOdd += i;
+      sumOdd += index;
     }
 
   }
