@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p {
+    width: 165px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 5px;
+    font-size: 24px;
+}

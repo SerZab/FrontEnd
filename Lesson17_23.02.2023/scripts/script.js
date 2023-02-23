@@ -94,7 +94,7 @@
 
 //==========================================
 
-function createProductCard(name, price) {
+function createProductCard(name, price) { // вынесли решение в функцию
   
   const productCardElem = document.createElement("div");
   const productTitleElement = document.createElement("h2");
