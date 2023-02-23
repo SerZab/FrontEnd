@@ -8,7 +8,7 @@ for (let index = 100; index >= 50; index -= 10) {
   // создаем новый элемент параграфа
   const p = document.createElement('p');
   // устанавливаем текстовое содержимое параграфа равным текущему значению i
-  p.textContent = index;
+  p.innerText = index;
   // добавляем параграф в div с классом "numbers"
   numbersDiv.appendChild(p);
 }
@@ -25,7 +25,7 @@ for (let index = 0; index < stringsArr.length; index++) {
   // создаем новый элемент параграфа
   const p = document.createElement('p');
   // устанавливаем текстовое содержимое параграфа равным текущей строке
-  p.textContent = stringsArr[index];
+  p.innerText = stringsArr[index];
   // добавляем параграф в div с классом "stringscontainer"
   stringsContainer.append(p);
 }
