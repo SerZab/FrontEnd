@@ -3,3 +3,43 @@
     margin: 0;
     box-sizing: border-box;
 }
+div {
+    margin: 5px;
+
+}
+
+.form_container form {
+    background-color: azure;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form_container form *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.form_container form button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#products .card {
+    width: 550px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#products .card:not(:last-child) {
+    margin-bottom: 5px;
+}
+    
