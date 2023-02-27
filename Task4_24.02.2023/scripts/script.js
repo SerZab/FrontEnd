@@ -1,15 +1,16 @@
 // 1. Напишите функцию, которая в качестве аргументов получает два числа и возвращает массив чисел со значениями от меньшего числа к большему.
 function task1(a, b) {
   const result = [];
-  let min;
-  let max;
-  if (a < b) {
-    min = a;
-    max = b;
-  } else {
-    min = b;
-    max = a;
-  }
+  let min = (a > b) ? b : a;
+  let max = (a > b) ? a : b;
+
+  // if (a < b) {
+  //   min = a;
+  //   max = b;
+  // } else {
+  //   min = b;
+  //   max = a;
+  // }
   for (let index = min; index <= max; index++) {
     result.push(index);
   }
@@ -48,14 +49,15 @@ function reverse(word) {
 
 function task8(wordArgument) {
   const reverseArg = reverse(wordArgument);
-  if (wordArgument === reverseArg) {
-    return true;
-  } else {
-    return false;
-  }
+  return wordArgument === reverseArg ? true : false;
+  // if (wordArgument === reverseArg) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
 }
 
-const test5 = task8("abc");
+const test5 = task8("abba");
 console.log(test5);
 const test6 = task8("abccba");
 console.log(test6);
@@ -66,9 +68,7 @@ console.log("====================");
 let sum = 0;
 
 for (let i = 0; i <= 50; i++) {
-  if (i % 5 === 0) {
-    sum += i;
-  }
+ sum += i % 10 === 0 ? i : 0;
 }
 
 console.log(sum);
