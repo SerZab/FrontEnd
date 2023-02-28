@@ -11,15 +11,9 @@ btn.innerText = "Change square and color";
 document.body.append(btn);
 
 function changeSquare() {
-  if (kvadrat.style.backgroundColor === "green") {
-    kvadrat.style.backgroundColor = "red";
-    kvadrat.style.width = "200px";
-    kvadrat.style.height = "200px";
-  } else {
-    kvadrat.style.backgroundColor = "green";
-    kvadrat.style.width = "100px";
-    kvadrat.style.height = "100px";
-  }
+  kvadrat.style.backgroundColor = kvadrat.style.backgroundColor === "green" ? "red" : "green";
+kvadrat.style.width = kvadrat.style.backgroundColor === "green" ? "100px" : "200px";
+kvadrat.style.height = kvadrat.style.backgroundColor === "green" ? "100px" : "200px";
 }
 btn.addEventListener("click", changeSquare);
 
@@ -45,11 +39,7 @@ newDiv.append(btn1);
 
 function newColor() {
   //вынес в функцию изменение цвета
-  if (square.style.backgroundColor === "pink") {
-    square.style.backgroundColor = "blue";
-  } else {
-    square.style.backgroundColor = "pink";
-  }
+  square.style.backgroundColor = square.style.backgroundColor === "pink" ? "blue" : "pink";
   console.log("New color is: " + square.style.backgroundColor); // выводим в консоль цвет квадрата
 }
 
