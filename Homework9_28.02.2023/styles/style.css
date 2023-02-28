@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#red-square {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: red;
+  }
+/* #change_color {
+    margin-left: 15px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+div {
+    margin: 10px; 
+    border: 1px solid black;
+    background-color: azure;
+}
+button {
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+hr {
+    margin: 10px;
+    height: 2px;
+    background-color: red;
+}
+p {
+    margin: 10px;
+    padding: 10px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
