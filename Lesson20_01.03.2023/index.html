@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Lesson 20, 01/03/2023, Flashcards (JS)</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+ <div class="flashcards-app">
+
+    <div class="input-section">
+        <h2>Flashcards</h2>
+        <form>
+            <label for="question">Question</label>
+            <input type="text" id="question" placeholder="Write your question">
+            <label for="answer">Answer</label>
+            <input type="text" id="answer" placeholder="Write your answer">           
+            <button id="add_cards">Add card</button>
+            <button id="remove_cards">Remove cards</button>
+        </form>
+    </div>
+    <div class="cards-section">
+        <div class="card">
+            <div class="card-front">
+                <p>Извините, я не знаю ответа на вопрос, но, возможно, я бы погуглил, если мне нужно решить что-то подобное</p>
+            </div>
+            <div class="card-back">
+                <p>I'm sorry, I don't know the answer for the question, but maybe I would google it, if I need to resolve something like that</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Я не уверен, что поймал последнюю часть. Не могли бы вы повторить?»</p>
+            </div>
+            <div class="card-back">
+                <p>I'm not sure I caught the last part. Could you please repeat it?"</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Это отличный вопрос. Вы не возражаете, если я воспользуюсь моментом, чтобы собраться с мыслями?</p>
+            </div>
+            <div class="card-back">
+                <p>That's a great question. Would you mind if I take a moment to gather my thoughts?</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Позвольте мне убедиться, что я правильно понял вопрос, прежде чем отвечать. Не могли бы вы пояснить это для меня</p>
+            </div>
+            <div class="card-back">
+                <p>Let me make sure I understand the question correctly before answering. Can you please clarify it for me</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Прежде всего, я хотел бы извиниться за мой плохой английский и ужасный восточноевропейский акцент, но я надеюсь, что вы меня правильно поймете.</p>
+            </div>
+            <div class="card-back">
+                <p>First of all, I would like to apologize for my bad English and terrible Eastern European accent, but I hope you will understand me correct.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Имею опыт поддержки клиентов Facebook и Apple. Я вырос из джуниора в старшего агента за 2 года, но такие проекты долго на одном месте не задерживаются, поэтому я решил получить новую профессию в IT. Поддерживал русскоязычных клиентов, но из-за санкций количество сотрудников значительно сократилось.</p>
+            </div>
+            <div class="card-back">
+                <p>I have experience in customer support for Facebook and Apple.  I grew from junior to senior agent in 2 years, but projects like this don't stay for a  long time in one place , that is why I decided to get a new profession in IT industry.  I supported Russian-speaking clients, but due to sanctions, the number of employees was significantly reduced.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>До переезда в Германию я работал главным инженером в коммунальной компании в своем городе на Украине, но на самом деле это была должность технического директора. Я уехал из Украины из-за экономических трудностей.</p>
+            </div>
+            <div class="card-back">
+                <p>Before I moved to Germany, I worked as a chief engineer at a utility company in my city in Ukraine, but in reality it was the position of technical director.  I left Ukraine due to economic difficulties.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Я понимаю, что ИТ-индустрия динамично развивается и мои знания вскоре могут немного утратить актуальность, поэтому я готов постоянно учиться и совершенствовать свои навыки. Чтобы быть в тренде, нужно постоянно учиться чему-то новому.</p>
+            </div>
+            <div class="card-back">
+                <p>I understand that the IT industry is developing dynamically and my knowledge may soon a little bit lose relevance, so I am ready constantly to learn and improve my skills. To be in trend you have to learn always something new.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Question</p>
+            </div>
+            <div class="card-back">
+                <p>Answer</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Question</p>
+            </div>
+            <div class="card-back">
+                <p>Answer</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Question</p>
+            </div>
+            <div class="card-back">
+                <p>Answer</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Question</p>
+            </div>
+            <div class="card-back">
+                <p>Answer</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Question</p>
+            </div>
+            <div class="card-back">
+                <p>Answer</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Question</p>
+            </div>
+            <div class="card-back">
+                <p>Answer</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Question</p>
+            </div>
+            <div class="card-back">
+                <p>Answer</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Question</p>
+            </div>
+            <div class="card-back">
+                <p>Answer</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Question</p>
+            </div>
+            <div class="card-back">
+                <p>Answer</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Question</p>
+            </div>
+            <div class="card-back">
+                <p>Answer</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Question</p>
+            </div>
+            <div class="card-back">
+                <p>Answer</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front">
+                <p>Question</p>
+            </div>
+            <div class="card-back">
+                <p>Answer</p>
+            </div>
+        </div>
+    </div>
+ </div>
+</body>
+<script src="./scripts/script.js"></script> 
+</html>
