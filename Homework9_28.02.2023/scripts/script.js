@@ -11,7 +11,7 @@ btn.innerText = "Change square and color";
 document.body.append(btn);
 
 function changeSquare() {
-  kvadrat.style.backgroundColor = kvadrat.style.backgroundColor === "green" ? "red" : "green";
+kvadrat.style.backgroundColor = kvadrat.style.backgroundColor === "green" ? "red" : "green";
 kvadrat.style.width = kvadrat.style.backgroundColor === "green" ? "100px" : "200px";
 kvadrat.style.height = kvadrat.style.backgroundColor === "green" ? "100px" : "200px";
 }
@@ -53,7 +53,7 @@ btn1.addEventListener("click", newColor);
 // Создаем кнопку и добавляем ее на страницу
 const btn2 = document.createElement("button");
 btn2.innerText = "Change square size";
-document.body.appendChild(btn2);
+document.body.append(btn2);
 
 // Создаем квадрат и устанавливаем ему размеры и цвет фона
 const square1 = document.createElement("div");
